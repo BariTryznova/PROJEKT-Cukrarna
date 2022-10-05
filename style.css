@@ -10,8 +10,7 @@ html { box-sizing: border-box; }
 	- všechny sekce mají nahoře a dole padding 80px
 	- kromě hlavičky a patičky, které mají jen 30px
 	- nadpisy jsou fontem Playfair Display, tučně
-	- veškerý další text na stránce fontem Lora
-	- výchozí velikost textu na stránce je 18px, řádkování 1.5
+
 
 	Velikosti nadpisů:
 	h1 - 52px  (nadpis v horní Hero sekci s cupcakem)
@@ -31,5 +30,179 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
+.sekce h2 {
+	color: #3e606b;
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+}
+
+/* hlavicka */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1100px;
+	Margin: 30px auto; 
+}
+
+.logo {
+	width: 170px;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	border-radius: 20px;
+	color: #242424;
+	padding: 10px 15px;
+}
+
+.menu a:hover {
+	background-color: #f195b2;
+	color: white;
+}
+
+/* hero sekce */
+
+.hero {
+	background-image: url(images/cupcake.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 500px;
+}
+
+.hrdina {
+	max-width: 1100px;
+	Margin-left: auto; 
+	Margin-right: auto; 
+	padding: 80px 0;
+}
+
+.hrdina h1 {
+	width: 60%;
+	color: white;
+	font-size: 52px;
+	margin-top: 0;
+	
+}
+
+.hrdina p {
+	font-size: 24px;
+	font-style: italic;
+	width: 60%;
+	color: white;
+}
+
+/* Vítejte v cukrárně */
+
+.sloupec {
+	max-width: 1100px;
+	display: flex;
+	Margin: 80px auto;
+}
+
+.pravy img {
+	border-radius: 5px;
+}
+
+.vitani {
+	margin-bottom: 50px;
+	margin-right: 30px;
+}
+
+.tlacitko {
+	padding: 20px 30px;
+	background-color: #f195b2;
+	text-decoration: none;
+	color: white;
+	border-radius: 30px;
+}
+
+.tlacitko:hover,
+.tlacitko:active {
+	background-color: #d2567d;
+}
+
+/* Produkty - Dnešní nabídka */
+
+.sladkosti {
+	background-color: #f0f0f0;
+}
+
+.nabidka {
+	max-width: 1100px;
+	margin: 80px auto;
+	padding: 80px 0;
+}
+
+.dorty {
+	display: flex;
+}
+
+.produkt img {
+	width: 253px;
+}
+
+.produkt {
+	background-color: white;
+	flex-grow: 0;
+}
+
+.prvni, 
+.druhy, 
+.treti {
+	margin-right: 30px;
+}
+
+.produkt p {
+	padding: 0 20px 20px 20px;
+}
+
+.prvni, 
+.druhy,
+.treti,
+.ctvrty {
+	border-radius: 5px;
+	overflow: hidden;
+	Box-shadow: 1px 1px 10px lightgrey;
+}
+
+.produkt h3 {
+	text-align: center;
+}
+
+/* náš přístup k pečení */
+
+.pristup {
+	max-width: 1100px;
+	display: flex;
+	Margin: 80px auto;
+}
+
+.nalevo {
+	margin-right: 30px;
+}
+
+.nalevo img {
+	border-radius: 5px;
+}
+
+/* footer */
+
+.footer {
+	background-color: #303339;
+	text-align: center;
+	padding: 30px;
+	color: white;
+}
